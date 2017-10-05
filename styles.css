@@ -1,0 +1,45 @@
+/*
+Styles
+*/
+
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body{ 
+    background-color:#778899;
+}
+
+#heading {
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.friend{
+    background-color: #fff;
+    display: inline-block;
+    padding: 20px 30px;
+    width: 80%;
+    border-radius: 10px;
+    margin: 20px 10%;
+}
+
+.friend p{
+    font-weight: bold; 
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#button { 
+    padding: 10px 20px;
+    cursor: pointer;
+}
