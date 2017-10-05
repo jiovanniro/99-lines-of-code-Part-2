@@ -1,0 +1,46 @@
+# Project Title
+Creating an array to hold a list of friends and using a button to print out song lyrics for each friend 
+
+## Goal
+Use JavaScript to manipulate the DOM 
+
+### Approach 
+
+I removed the HTML elements from index.html and added an event listener to make sure the page loaded and monitor when the button 
+was clicked by the user 
+
+``` 
+document.addEventListener("DOMContentLoaded", function(){
+ let button = document.getElementById("button");
+
+    button.addEventListener("click", function(){
+```
+
+Added JavaScript code to each for loop that will add HTML elements to the DOM
+
+For example: 
+
+```
+    for (let i=0; i<friends.length; i++){
+        //create elements
+        const div = document.createElement("div");
+        const heading = document.createElement("h3");
+        
+
+        //append the div to body
+        document.body.appendChild(div);
+        
+```
+        for (let j=99; j>0; j--){
+            //the if statement checks for the last iteration and changes the song to singular 
+            if (j===1){
+                const p = document.createElement("p");
+                p.innerHTML =  j + " line of code in the file, " + j + " line of code; " + friends[i] + " strikes one out, clears it all out, no more lines of code in the file";   
+                div.appendChild(p); 
+            } else { 
+                const p = document.createElement("p");
+                p.innerHTML =  j + " lines of code in the file, " + j + " lines of code; " + friends[i] + " strikes one out, clears it all out, " + (j-1) + " lines of code in the file";      
+                div.appendChild(p); 
+            } 
+        };
+```
